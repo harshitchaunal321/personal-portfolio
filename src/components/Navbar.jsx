@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { navLinks } from "../constants/data";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import { SiLeetcode } from 'react-icons/si';
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -49,7 +50,7 @@ const Navbar = () => {
                     }}
                 >
                     <p className="text-black dark:text-white text-[18px] font-bold cursor-pointer flex">
-                        YourName&nbsp;
+                        Harshit Chaunal&nbsp;
                         <span className="sm:block hidden">| Full Stack Developer</span>
                     </p>
                 </a>
@@ -79,7 +80,7 @@ const Navbar = () => {
 
                     <div className="hidden sm:flex gap-4">
                         <a
-                            href="https://github.com/yourusername"
+                            href="https://github.com/harshitchaunal321"
                             target="_blank"
                             rel="noreferrer"
                             className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
@@ -87,7 +88,7 @@ const Navbar = () => {
                             <FaGithub size={20} />
                         </a>
                         <a
-                            href="https://linkedin.com/in/yourusername"
+                            href="https://www.linkedin.com/in/harshitchaunal/"
                             target="_blank"
                             rel="noreferrer"
                             className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
@@ -95,13 +96,14 @@ const Navbar = () => {
                             <FaLinkedin size={20} />
                         </a>
                         <a
-                            href="https://twitter.com/yourusername"
+                            href="https://leetcode.com/u/harshitchaunal123/"
                             target="_blank"
                             rel="noreferrer"
                             className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                         >
-                            <FaTwitter size={20} />
+                            <FaCode size={20} />
                         </a>
+
                     </div>
 
                     <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -155,12 +157,12 @@ const Navbar = () => {
                                         <FaLinkedin size={20} />
                                     </a>
                                     <a
-                                        href="https://twitter.com/yourusername"
+                                        href="https://leetcode.com/u/harshitchaunal123/"
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="text-gray-400 hover:text-white transition-colors"
+                                        className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                                     >
-                                        <FaTwitter size={20} />
+                                        <FaCode size={20} />
                                     </a>
                                 </li>
                             </ul>
