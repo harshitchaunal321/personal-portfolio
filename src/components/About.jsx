@@ -39,7 +39,7 @@ const About = () => {
                         >
                             <div className="bg-white dark:bg-gray-800 rounded-2xl py-8 px-6 flex justify-evenly items-center flex-col h-full">
                                 <img
-                                    src="/assets/profile.jpg"
+                                    src="/assets/profile.jpeg"
                                     alt="profile"
                                     className="w-full h-auto rounded-xl object-cover"
                                 />
@@ -107,7 +107,7 @@ const About = () => {
                                 Contact Me
                             </a>
                             <a
-                                href="/assets/resume.pdf"
+                                href="/assets/Harshit Chaunal Resume.pdf"
                                 download
                                 className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-2"
                             >

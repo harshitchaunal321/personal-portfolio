@@ -141,7 +141,7 @@ const Navbar = () => {
                                 ))}
                                 <li className="flex gap-4">
                                     <a
-                                        href="https://github.com/yourusername"
+                                        href="https://github.com/harshitchaunal321"
                                         target="_blank"
                                         rel="noreferrer"
                                         className="text-gray-400 hover:text-white transition-colors"
@@ -149,7 +149,7 @@ const Navbar = () => {
                                         <FaGithub size={20} />
                                     </a>
                                     <a
-                                        href="https://linkedin.com/in/yourusername"
+                                        href="https://www.linkedin.com/in/harshitchaunal/"
                                         target="_blank"
                                         rel="noreferrer"
                                         className="text-gray-400 hover:text-white transition-colors"

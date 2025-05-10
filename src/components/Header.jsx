@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCode, FaFileDownload } from "react-icons/fa";
 import { HiChevronDoubleDown } from "react-icons/hi";
 import "../styles/Header.css";
 
@@ -16,7 +16,7 @@ const Header = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-black dark:text-white">
-                            Hi, I'm <span className="text-primary">Your Name</span>
+                            Hi, I'm <span className="text-primary">Harshit Chaunal</span>
                         </h1>
                     </motion.div>
 
@@ -69,7 +69,7 @@ const Header = () => {
                             Contact Me
                         </a>
                         <a
-                            href="/assets/resume.pdf"
+                            href="/assets/Harshit Chaunal Resume.pdf"
                             download
                             className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-2"
                         >
@@ -84,7 +84,7 @@ const Header = () => {
                         className="flex gap-4 mt-6"
                     >
                         <a
-                            href="https://github.com/yourusername"
+                            href="https://github.com/harshitchaunal321"
                             target="_blank"
                             rel="noreferrer"
                             className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
@@ -92,7 +92,7 @@ const Header = () => {
                             <FaGithub size={24} />
                         </a>
                         <a
-                            href="https://linkedin.com/in/yourusername"
+                            href="https://www.linkedin.com/in/harshitchaunal/"
                             target="_blank"
                             rel="noreferrer"
                             className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
@@ -100,12 +100,12 @@ const Header = () => {
                             <FaLinkedin size={24} />
                         </a>
                         <a
-                            href="https://twitter.com/yourusername"
+                            href="https://leetcode.com/u/harshitchaunal123/"
                             target="_blank"
                             rel="noreferrer"
                             className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
                         >
-                            <FaTwitter size={24} />
+                            <FaCode size={24} />
                         </a>
                     </motion.div>
                 </div>
