@@ -1,0 +1,151 @@
+.experience__container {
+    padding: 4rem 0;
+}
+
+.experience__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.experience__timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience__timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #e5e7eb;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+}
+
+.dark .experience__timeline::after {
+    background-color: #4b5563;
+}
+
+.experience__item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.experience__item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid var(--primary);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.dark .experience__item::after {
+    background-color: #1f2937;
+}
+
+.experience__item:nth-child(odd) {
+    left: 0;
+}
+
+.experience__item:nth-child(even) {
+    left: 50%;
+}
+
+.experience__item:nth-child(even)::after {
+    left: -12px;
+}
+
+.experience__content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .experience__content {
+    background-color: #2d3748;
+}
+
+.experience__content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.experience__date {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experience__role {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.dark .experience__role {
+    color: #eee;
+}
+
+.experience__company {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.dark .experience__company {
+    color: #ccc;
+}
+
+.experience__points {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+.dark .experience__points {
+    color: #ccc;
+}
+
+.experience__point {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .experience__timeline::after {
+        left: 31px;
+    }
+
+    .experience__item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .experience__item:nth-child(even) {
+        left: 0;
+    }
+
+    .experience__item:nth-child(odd)::after,
+    .experience__item:nth-child(even)::after {
+        left: 18px;
+    }
+
+    .experience__item:nth-child(even) .experience__content {
+        margin-right: 0;
+    }
+}

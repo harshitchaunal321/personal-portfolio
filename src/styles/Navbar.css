@@ -1,0 +1,237 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.dark .navbar.scrolled {
+    background-color: #1f2937;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dark .navbar__logo {
+    color: #f3f4f6;
+}
+
+.navbar__logo span {
+    color: var(--primary);
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__link {
+    color: #4b5563;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.dark .navbar__link {
+    color: #9ca3af;
+}
+
+.navbar__link:hover {
+    color: var(--primary);
+}
+
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.navbar__link:hover::after {
+    width: 100%;
+}
+
+.navbar__link.active {
+    color: var(--primary);
+}
+
+.navbar__link.active::after {
+    width: 100%;
+}
+
+.navbar__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__theme-toggle {
+    background: none;
+    border: none;
+    color: #4b5563;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dark .navbar__theme-toggle {
+    color: #9ca3af;
+}
+
+.navbar__theme-toggle:hover {
+    color: var(--primary);
+    transform: rotate(30deg);
+}
+
+.navbar__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar__social-link {
+    color: #4b5563;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dark .navbar__social-link {
+    color: #9ca3af;
+}
+
+.navbar__social-link:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.navbar__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #4b5563;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dark .navbar__hamburger {
+    color: #9ca3af;
+}
+
+.navbar__mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 1001;
+    transition: right 0.3s ease;
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dark .navbar__mobile-menu {
+    background-color: #1f2937;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar__mobile-menu.active {
+    right: 0;
+}
+
+.navbar__mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.navbar__mobile-close {
+    background: none;
+    border: none;
+    color: #4b5563;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dark .navbar__mobile-close {
+    color: #9ca3af;
+}
+
+.navbar__mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.navbar__mobile-link {
+    color: #4b5563;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dark .navbar__mobile-link {
+    color: #9ca3af;
+}
+
+.navbar__mobile-link:hover {
+    color: var(--primary);
+}
+
+.navbar__mobile-link.active {
+    color: var(--primary);
+}
+
+.navbar__mobile-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+
+    .navbar__menu,
+    .navbar__social {
+        display: none;
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+}
