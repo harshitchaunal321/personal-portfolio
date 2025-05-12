@@ -92,7 +92,7 @@ const Contact = () => {
                                         Email
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-400">
-                                        your.email@example.com
+                                        harshitchaunal123@gmail.com
                                     </p>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ const Contact = () => {
                                         Phone
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-400">
-                                        +1 (123) 456-7890
+                                        +91 7579205137
                                     </p>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                                         Location
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-400">
-                                        San Francisco, CA
+                                        Nainital, Uttarakhand, India
                                     </p>
                                 </div>
                             </div>

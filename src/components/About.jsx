@@ -39,7 +39,7 @@ const About = () => {
                         >
                             <div className="bg-white dark:bg-gray-800 rounded-2xl py-8 px-6 flex justify-evenly items-center flex-col h-full">
                                 <img
-                                    src="/assets/profile.jpg"
+                                    src="/assets/profile.jpeg"
                                     alt="profile"
                                     className="w-full h-auto rounded-xl object-cover"
                                 />
@@ -70,7 +70,7 @@ const About = () => {
                                     Frontend Expertise
                                 </h4>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    React, Next.js, TypeScript, Redux, TailwindCSS, Material UI
+                                    React, React Native, TypeScript, Redux, Bootstrap, HTML5, CSS3
                                 </p>
                             </div>
                             <div>
@@ -78,7 +78,7 @@ const About = () => {
                                     Backend Expertise
                                 </h4>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Node.js, Express, NestJS, Python, Django, RESTful APIs
+                                    Java, SpringBoot, JavaScript, Node.js, Express, RESTful APIs
                                 </p>
                             </div>
                             <div>
@@ -86,7 +86,7 @@ const About = () => {
                                     Database
                                 </h4>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    MongoDB, PostgreSQL, MySQL, Firebase
+                                    MySQL, MongoDB, DynamoDB
                                 </p>
                             </div>
                             <div>
@@ -94,7 +94,15 @@ const About = () => {
                                     DevOps
                                 </h4>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Docker, AWS, CI/CD, Git, GitHub Actions
+                                    Docker, AWS, Git
+                                </p>
+                            </div>
+                            <div>
+                                <h4 className="text-lg font-semibold text-black dark:text-white mb-2">
+                                    Others
+                                </h4>
+                                <p className="text-gray-600 dark:text-gray-400">
+                                    Wordpress, JUnit, Mockito, Agile, EsLint
                                 </p>
                             </div>
                         </div>
@@ -107,7 +115,7 @@ const About = () => {
                                 Contact Me
                             </a>
                             <a
-                                href="/assets/resume.pdf"
+                                href="/assets/Harshit Chaunal Resume.pdf"
                                 download
                                 className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-2"
                             >

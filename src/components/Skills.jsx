@@ -1,60 +1,96 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaCode, FaServer, FaDatabase, FaCloud } from "react-icons/fa";
 import { skills } from "../constants/skills";
 import "../styles/Skills.css";
 
-const SkillCategory = ({ title, skills }) => {
+const SkillPill = ({ skill, index }) => {
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-6">
-                {title}
-            </h3>
-            <div className="space-y-4">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
+            className="skill-pill"
+        >
+            <div className="skill-pill__icon">{skill.icon}</div>
+            <span className="skill-pill__name">{skill.name}</span>
+            <div className="skill-pill__experience">{skill.experience}</div>
+        </motion.div>
+    );
+};
+
+const SkillCategory = ({ title, skills, icon, color }) => {
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="skill-category"
+            style={{ "--category-color": color }}
+        >
+            <div className="skill-category__header">
+                <div className="skill-category__icon" style={{ backgroundColor: color }}>
+                    {icon}
+                </div>
+                <h3 className="skill-category__title">{title}</h3>
+            </div>
+            <div className="skill-pills">
                 {skills.map((skill, index) => (
-                    <div key={index}>
-                        <div className="flex justify-between mb-1">
-                            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                                {skill.name}
-                            </span>
-                            <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                                {skill.level}
-                            </span>
-                        </div>
-                        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                            <div
-                                className="bg-primary h-2.5 rounded-full"
-                                style={{ width: skill.level }}
-                            ></div>
-                        </div>
-                    </div>
+                    <SkillPill key={index} skill={skill} index={index} />
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="skills" className="skills-section">
+            <div className="skills-container">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="skills-header"
                 >
-                    <h2 className="text-4xl font-bold text-black dark:text-white mb-4">
-                        My Skills
+                    <h2 className="skills-title">
+                        <span className="skills-title__highlight">Technical</span> Expertise
                     </h2>
-                    <div className="w-20 h-1 bg-primary mx-auto"></div>
+                    <p className="skills-subtitle">
+                        Technologies I've mastered through years of hands-on experience
+                    </p>
+                    <div className="skills-header__divider"></div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <SkillCategory title="Frontend Development" skills={skills.frontend} />
-                    <SkillCategory title="Backend Development" skills={skills.backend} />
-                    <SkillCategory title="Database" skills={skills.database} />
-                    <SkillCategory title="DevOps & Tools" skills={skills.devops} />
+                <div className="skills-grid">
+                    <SkillCategory
+                        title="Frontend Development"
+                        skills={skills.frontend}
+                        icon={<FaCode />}
+                        color="#3B82F6"
+                    />
+                    <SkillCategory
+                        title="Backend Development"
+                        skills={skills.backend}
+                        icon={<FaServer />}
+                        color="#10B981"
+                    />
+                    <SkillCategory
+                        title="Database"
+                        skills={skills.database}
+                        icon={<FaDatabase />}
+                        color="#EC4899"
+                    />
+                    <SkillCategory
+                        title="DevOps & Cloud"
+                        skills={skills.devops}
+                        icon={<FaCloud />}
+                        color="#F59E0B"
+                    />
                 </div>
             </div>
         </section>
