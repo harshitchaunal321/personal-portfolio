@@ -22,12 +22,13 @@ export const navLinks = [
 ];
 
 export const experiences = [
+    //TODO: update the experience data
     {
-        title: "Full Stack Developer",
-        company_name: "Tech Company Inc.",
-        icon: "/assets/company1.png",
-        iconBg: "#383E56",
-        date: "Jan 2022 - Present",
+        title: "Senior Software Engineer",
+        company_name: "Igniters Hub",
+        icon: "/assets/igniterslogo.png",
+        iconBg: "#E6DEDD",
+        date: "May 2024 - Present",
         points: [
             "Developed and maintained web applications using React.js, Node.js, and other related technologies.",
             "Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -37,10 +38,23 @@ export const experiences = [
     },
     {
         title: "Software Engineer",
-        company_name: "Software Solutions Ltd.",
-        icon: "/assets/company2.png",
+        company_name: "Igniters Hub",
+        icon: "/assets/igniterslogo.png",
         iconBg: "#E6DEDD",
-        date: "Mar 2020 - Dec 2021",
+        date: "Oct 2021 - May 2024",
+        points: [
+            "Built RESTful APIs with Node.js and Express that served data to the React front-end.",
+            "Optimized applications for maximum speed and scalability.",
+            "Worked on database design and optimization with MongoDB and PostgreSQL.",
+            "Mentored junior developers and conducted technical interviews.",
+        ],
+    },
+    {
+        title: "Software Engineer Intern",
+        company_name: "Igniters Hub",
+        icon: "/assets/igniterslogo.png",
+        iconBg: "#E6DEDD",
+        date: "Dec 2020 - Oct 2021",
         points: [
             "Built RESTful APIs with Node.js and Express that served data to the React front-end.",
             "Optimized applications for maximum speed and scalability.",
