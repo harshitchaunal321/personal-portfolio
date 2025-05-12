@@ -1,67 +1,32 @@
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaAws, FaDocker, FaGitAlt, FaCode, FaJava } from "react-icons/fa";
+import { SiTypescript, SiRedux, SiBootstrap, SiExpress, SiSpringboot, SiMongodb, SiMysql, SiAmazondynamodb } from "react-icons/si";
+
 export const skills = {
     frontend: [
-        {
-            name: "HTML5",
-        },
-        {
-            name: "CSS3",
-        },
-        {
-            name: "JavaScript",
-        },
-        {
-            name: "TypeScript",
-        },
-        {
-            name: "React",
-        },
-        {
-            name: "React Native",
-        },
-        {
-            name: "Redux",
-        },
-        {
-            name: "Bootstrap",
-        },
+        { name: "HTML5", icon: <FaHtml5 /> },
+        { name: "CSS3", icon: <FaCss3Alt /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "React", icon: <FaReact /> },
+        { name: "React Native", icon: <FaReact /> },
+        { name: "Redux", icon: <SiRedux /> },
+        { name: "Bootstrap", icon: <SiBootstrap /> },
     ],
     backend: [
-        {
-            name: "Node.js",
-        },
-        {
-            name: "Express",
-        },
-        {
-            name: "Java",
-        },
-        {
-            name: "Spring Boot",
-        },
-        {
-            name: "RESTful APIs",
-        },
+        { name: "Java", icon: <FaJava /> },
+        { name: "Spring Boot", icon: <SiSpringboot /> },
+        { name: "Node.js", icon: <FaNode /> },
+        { name: "Express", icon: <SiExpress /> },
+        { name: "JavaScript", icon: <FaJs /> },
+        { name: "RESTful APIs", icon: <FaCode /> },
     ],
     database: [
-        {
-            name: "MySQL",
-        },
-        {
-            name: "MongoDB",
-        },
-        {
-            name: "DynamoDB",
-        }
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "DynamoDB", icon: <SiAmazondynamodb /> }
     ],
     devops: [
-        {
-            name: "Docker",
-        },
-        {
-            name: "AWS",
-        },
-        {
-            name: "Git",
-        },
+        { name: "Docker", icon: <FaDocker /> },
+        { name: "AWS", icon: <FaAws /> },
+        { name: "Git", icon: <FaGitAlt /> },
     ],
 };

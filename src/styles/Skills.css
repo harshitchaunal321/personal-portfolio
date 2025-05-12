@@ -60,8 +60,12 @@
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+
+.skill-category:nth-child(4) {
+    grid-column: 2;
 }
 
 /* Skill Category */
@@ -89,10 +93,8 @@
 }
 
 .skill-category__header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    min-height: 80px;
+    margin-bottom: 5px;
 }
 
 .skill-category__icon {
@@ -150,9 +152,11 @@
 }
 
 .skill-pill__icon {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    min-width: 1.2rem;
+    /* Add fixed width */
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .skill-pill__name {
@@ -163,6 +167,16 @@
     font-size: 0.7rem;
     opacity: 0.8;
     margin-left: 0.25rem;
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-category:nth-child(4) {
+        grid-column: auto;
+    }
 }
 
 /* Responsive Design */
